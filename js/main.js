@@ -58,4 +58,11 @@ $(document).ready(function() {
     $(function() {
         new WOW().init();
     });
+
+    // Инициализация меню
+    $(function() {
+        $('button').on('click', function(){
+            $('body').toggleClass('open');
+        });
+    });
 });
