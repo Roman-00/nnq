@@ -239,15 +239,16 @@ h1, h2, h3, h4, h5, h6, p, span {
     margin-top: auto;
     padding: 20px 0px;
 }
-  
-.footer-content {
+
+.footer__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .social__icon {
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 
 .footer__social-link {
@@ -350,11 +351,28 @@ h1, h2, h3, h4, h5, h6, p, span {
     .menu__nav  {
         margin-left: 90px;
     }
+
+    .hero__title {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 1140px) {
     .menu__nav  {
         margin-left: 20px;
+    }
+
+    .hero__title {
+        font-size: 30px;
+    }
+
+    .hero__title-desc {
+        font-size: 30px;
+    }
+
+    .parallax {
+        width: 541px;
+        height: 500px;
     }
 }
 
@@ -363,6 +381,22 @@ h1, h2, h3, h4, h5, h6, p, span {
         margin-right: 30px;
         font-size: 18px;
     }
+
+    .parallax {
+        width: 500px;
+        height: 490px;
+    }
+}
+
+@media (max-width: 992px) {
+    .parallax {
+        width: 480px;
+        height: 470px;
+    }
+
+    .footer {
+        padding: 40px 0px;
+    }
 }
 
 @media (max-width: 968px) {
@@ -370,11 +404,42 @@ h1, h2, h3, h4, h5, h6, p, span {
         margin-right: 20px;
         font-size: 16px;
     }
+
+    .hero__content-polygon {
+        display: none;
+    }
+
+    .hero__content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__content-logo {
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 35px;
+    }
+
+    .btn {
+        margin: auto;
+    }
+
+    .footer__content {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 968px) {
-    .nav {
-        display: none;
+@media (max-width: 865px) {
+    .header__logo {
+        margin-right: 10px;
+    }
+
+    .nav__item {
+        margin-right: 15px;
+        font-size: 14px;
     }
 }
 
@@ -382,6 +447,10 @@ h1, h2, h3, h4, h5, h6, p, span {
     .header__content {
         align-items: center;
         justify-content: start;
+    }
+
+    .nav {
+        display: none;
     }
 
     .menu__contacts {
@@ -725,6 +794,12 @@ h1, h2, h3, h4, h5, h6, p, span {
     }
 }
 
+@media (max-width: 525px) {
+    .hero__title {
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 420px) {
     .header__logo {
         margin-right: 15px;
@@ -735,7 +810,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     }
 
     ul li {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
