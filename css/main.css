@@ -8,6 +8,11 @@
     outline-offset: 0;
 }
 
+*:before,
+*:after {
+  z-index: -1;
+}
+
 html {
     font-size: 14px;
 }
@@ -70,6 +75,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .nav__item {
+    position: relative;
     margin-right: 50px;
     font-family: 'Calibri', sans-serif;
     font-size: 20px;
@@ -80,6 +86,23 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .nav__item:last-of-type {
     margin-right: 0px;
+}
+
+.nav__item::after {
+    display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px;
+	background-color:#CE0056;
+	content: "";
+    transition: width 0.3s ease-out;
+    margin-top: 4px;
+}
+
+.nav__item:hover:after,
+.nav__item:focus:after {
+	width: 100%;
 }
 
 .phone__images {
@@ -150,7 +173,11 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .btn {
+    position: relative;
+    display: block;
     padding: 16px 105px;
+    width: 100%;
+    max-width: 250px;
     border: none;
     font-family: 'Calibri', sans-serif;
     text-transform: uppercase;
@@ -163,6 +190,46 @@ h1, h2, h3, h4, h5, h6, p, span {
     font-size: 20px;
     line-height: 29px;
     color: #20206B;
+    overflow: hidden;
+}
+
+.btn:before, .btn:after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #20206B;
+    border-radius: 50%;
+}
+
+.btn:before {
+    left: -20px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.btn:after {
+    right: -20px;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn:hover:before {
+    -webkit-animation: criss-cross-left 0.8s both;
+            animation: criss-cross-left 0.8s both;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+.btn:hover:after {
+    -webkit-animation: criss-cross-right 0.8s both;
+            animation: criss-cross-right 0.8s both;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
 }
 
 /* ---------- Footer ---------- */
