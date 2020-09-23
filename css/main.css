@@ -1,0 +1,194 @@
+/* ---------- Базовые стили для всей верстки ---------- */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after *:active *:focus *:hover {
+    outline: 0;
+    outline-offset: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Calibri', sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+/* ---------- Начало стилей для верстки Header ---------- */
+
+.header {
+    padding: 15px 0px;
+}
+
+.header__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 20px;
+}
+
+.header__logo:last-of-type {
+    margin-right: 0px;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.menu__nav {
+    position: relative;
+    margin-right: auto;
+    margin-left: 110px;
+}
+
+.nav__item {
+    margin-right: 50px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #20206B;
+}
+
+.nav__item:last-of-type {
+    margin-right: 0px;
+}
+
+.phone__images {
+    margin-right: 20px;
+}
+
+.contacts__phone {
+    display: flex;
+    align-items: center;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #20206B;
+}
+
+/* ---------- Стили для секции Hero --------- */
+
+.hero {
+    padding-top: 60px;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__content-offer,
+.hero__content-polygon {
+    margin: 0px 15px;
+}
+
+.hero__content-logo {
+    margin-bottom: 40px;
+}
+
+.hero__title {
+    margin-bottom: 10px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #20206B;
+}
+
+.hero__title-desc {
+    display: block;
+    margin-bottom: 70px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 53px;
+    color: #CE0056;
+}
+
+.parallax
+{
+   width: 581px;
+   height: 526px;
+}
+ 
+.background-tree
+{
+   background: url('../img/img-hero.png');
+   background-size: cover;
+}
+
+.btn {
+    padding: 16px 105px;
+    border: none;
+    font-family: 'Calibri', sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: none;
+    border: 3px solid #20206B;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #20206B;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    margin-top: auto;
+    padding: 20px 0px;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__icon {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social-link {
+    display: block;
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer__social-link:last-of-type {
+    margin-right: 0px;
+}
