@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Функция анимации на главном экране 
 
+    // Функция анимации на главном экране 
     const animImg = () => {
         //Получаем элемент фона с деревом
         const bgTree = document.getElementById("background-tree");
@@ -26,6 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 $(document).ready(function() {
+
+    // Прелоадер
+
+    window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
+
+
     $(function() {  
         $('.btn-6')
           .on('mouseenter', function(e) {
