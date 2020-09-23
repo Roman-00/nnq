@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Елбасы Академиясының қашықтан оқыту мектебі</title>
+    <!--  Подключение файла гланого файла анимации  -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Подключение файла с анимацией -->
     <link rel="stylesheet" href="css/animation.css">
     <!-- Подключение файла normalize.css для корректного отображения верстки -->
@@ -27,7 +29,7 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header__content">
-                <div class="header__content-logo">
+                <div class="header__content-logo wow fadeInLeft">
                     <a href="#" class="logo header__logo">
                         <img src="img/logo-h1.png" alt="Nursultan Nazarbaev Qory">
                     </a> 
@@ -38,7 +40,7 @@
                     <!-- /.logo header__logo -->
                 </div>
                 <!-- /.header__content-logo -->
-                <nav class="nav menu__nav">
+                <nav class="nav menu__nav wow fadeInDown">
                     <a href="#" class="nav__item">
                         жоба туралы
                     </a>
@@ -57,7 +59,7 @@
                     <!-- /.nav__item -->
                 </nav>
                 <!-- /.nav menu__nav -->
-                <div class="contacts menu__contacts">
+                <div class="contacts menu__contacts wow fadeInRight">
                     <a href="tel:7170" class="phone contacts__phone">
                         <img src="img/phone-call.svg" alt="Телефон" class="phone__images">
                         7170
@@ -75,15 +77,15 @@
             <div class="container">
                 <div class="hero__content">
                     <div class="hero__content-offer">
-                        <div class="hero__content-logo hero__logo">
+                        <div class="hero__content-logo hero__logo wow slideInDown">
                             <img src="img/logo-e.png" alt="Birge oqy" class="hero__logo-img">
                         </div>
                         <!-- /.hero__content-logo hero__logo -->
-                        <h1 class="hero__section-title hero__title title">
+                        <h1 class="hero__section-title hero__title title wow fadeInLeft">
                             Елбасы Академиясының
                         </h1>
                         <!-- /.hero__section-title title -->
-                        <span class="hero__title-desc">
+                        <span class="hero__title-desc wow slideInUp">
                             қашықтан оқыту мектебі
                         </span> 
                         <!-- /.hero__title-desc -->
@@ -93,7 +95,7 @@
                         <!-- /.btn hero__btn hero__btn-primary -->
                     </div>
                     <!-- /.hero__content-offer -->
-                    <div class="hero__content-polygon">
+                    <div class="hero__content-polygon wow fadeInRight">
                         <div class="parallax background-tree" id="background-tree"></div>
                     </div>
                     <!-- /.hero__content-polygon -->
@@ -134,9 +136,8 @@
 
     <!-- Подключение библиотеки Jquery -->
     <script src="js/jquery-3.5.1.min.js"></script>
-    <!-- Подключение библиотеки Pjax -->
-    <script src="js/jquery.parallax.min.js"></script>
-    <script src="js/jquery.event.frame.js"></script>
+    <!-- Подключаем wow js -->
+    <script src="js/wow.min.js"></script>
     <!-- Подключение главного файла со скриптами -->
     <script src="js/main.js"></script>
 </body>

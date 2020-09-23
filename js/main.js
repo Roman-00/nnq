@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function() {
 
     // Прелоадер
-
     window.onload = function () {
         document.body.classList.add('loaded_hiding');
         window.setTimeout(function () {
@@ -37,7 +36,7 @@ $(document).ready(function() {
         }, 500);
     }
 
-
+    // Анимация для изображения
     $(function() {  
         $('.btn-6')
           .on('mouseenter', function(e) {
@@ -54,4 +53,9 @@ $(document).ready(function() {
           });
         $('[href=#]').click(function(){return false});
       });
+
+    // Инициализация WOW.js
+    $(function() {
+        new WOW().init();
+    });
 });
