@@ -335,6 +335,14 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 /* --------- Preloader style ---------- */
 
+/* ---------- Toogle Menu ---------- */
+
+.menu-toggle,
+.mob-menu {
+    display: none;
+}
+
+/* ---------- Toogle Menu ---------- */
 
 /* ---------- Медиа запросы для адаптива ---------- */
 
@@ -378,6 +386,11 @@ h1, h2, h3, h4, h5, h6, p, span {
 
     .menu__contacts {
         margin-left: 100px;
+    }
+
+    .menu-toggle,
+    .mob-menu {
+        display: block;
     }
 
     .preloader {
@@ -705,5 +718,34 @@ h1, h2, h3, h4, h5, h6, p, span {
 @media (max-width: 648px) {
     .menu__contacts {
         display: none;
+    }
+
+    ul li {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header__logo {
+        margin-right: 15px;
+    }
+    
+    .header__logo img {
+        max-width: 40%;
+    }
+
+    ul li {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header__logo {
+        margin-right: 10px;
+    }
+
+    .header__logo img {
+        padding-top: 10px;
+        max-width: 35%;
     }
 }
