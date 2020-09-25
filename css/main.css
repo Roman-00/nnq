@@ -448,11 +448,15 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 @media (max-width: 1190px) {
     .menu__nav  {
-        margin-left: 90px;
+        margin-left: 10px;
     }
 
     .hero__title {
         font-size: 35px;
+    }
+
+    .nav__item {
+        margin-right: 18px;
     }
 }
 
@@ -473,6 +477,10 @@ h1, h2, h3, h4, h5, h6, p, span {
         width: 541px;
         height: 500px;
     }
+
+    .contacts {
+        margin: 20px 0px 0px 20px;
+    }
 }
 
 @media (max-width: 1070px) {
@@ -484,6 +492,10 @@ h1, h2, h3, h4, h5, h6, p, span {
     .parallax {
         width: 500px;
         height: 490px;
+    }
+
+    .contacts {
+        margin-top: 0px;
     }
 }
 
@@ -543,6 +555,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 @media (max-width: 768px) {
+    body {
+        background: url('../img/img-hero.png') no-repeat center center;
+    }
+
     .header__content {
         align-items: center;
         justify-content: start;
