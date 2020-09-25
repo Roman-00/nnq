@@ -137,6 +137,62 @@ h1, h2, h3, h4, h5, h6, p, span {
     margin: 0px 15px;
 }
 
+.hero__content-polygon {
+    position: relative;
+}
+
+.hero__content-cogwheel {
+    position: absolute;
+    left: 6px;
+    top: 90px;
+    z-index: -1;
+}
+
+.hero__content-cogwheel-2 {
+    position: absolute;
+    left: -77px;
+    top: 200px;
+    z-index: -1;
+}
+
+.hero__message {
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+}
+
+.hero__content-cogwheel {
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hero__content-cogwheel-2 {
+    animation-name: rotation-2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes rotation-2 {
+    0% {
+        transform:rotate(360deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+
 .hero__content-logo {
     margin-bottom: 40px;
 }
