@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +16,16 @@
     <!-- Подключение главного файла со стилями -->
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
     <!---------- Preloader ---------->
     <div class="preloader">
         <div class="preloader__row">
-          <div class="preloader__item"></div>
-          <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
         </div>
-      </div>
+    </div>
     <!---------- Preloader ---------->
 
     <header class="header" id="header">
@@ -32,11 +34,11 @@
                 <div class="header__content-logo wow fadeInLeft" data-wow-delay="0.5s">
                     <a href="#" class="logo header__logo">
                         <img src="img/logo-h1.png" alt="Nursultan Nazarbaev Qory">
-                    </a> 
+                    </a>
                     <!-- /.logo header__logo -->
                     <a href="#" class="logo header__logo">
                         <img src="img/logo-h2.png" alt="El Umiti">
-                    </a> 
+                    </a>
                     <!-- /.logo header__logo -->
                 </div>
                 <!-- /.header__content-logo -->
@@ -56,7 +58,7 @@
                         <img src="img/button/02-ru.png" alt="оқушыға" class="nav__item-img">
                     </a>
                     <!-- /.nav__item -->
-                    <a href="#" class="nav__item">
+                    <a href="#" class="nav__item popup-btn">
                         <!-- байланыс -->
                         <img src="img/button/04-ru.png" alt="байланыс" class="nav__item-img">
                     </a>
@@ -74,10 +76,10 @@
                 <!-- /.menu-toggle -->
                 <nav class="mob-menu">
                     <ul class="menu">
-                      <li data-text="Home">о проекте</li>
-                      <li data-text="Projects">родителю</li>
-                      <li data-text="About">ученику</li>
-                      <li data-text="Contact">контакты</li>
+                        <li data-text="Home">о проекте</li>
+                        <li data-text="Projects">родителю</li>
+                        <li data-text="About">ученику</li>
+                        <li class="popup-btn">контакты</li>
                     </ul>
                 </nav>
             </div>
@@ -97,7 +99,7 @@
                         <!-- /.hero__content-logo hero__logo -->
                         <span class="hero__title-desc-ru wow fadeInLeft" data-wow-delay="0.5s">
                             дистанционная школа
-                        </span> 
+                        </span>
                         <!-- /.hero__title-desc -->
                         <h1 class="hero__section-title hero__title-ru title wow slideInUp" data-wow-delay="0.5s">
                             АКАДЕМИИ ЕЛБАСЫ
@@ -105,7 +107,7 @@
                         <!-- /.hero__section-title title -->
                         <a href="#" class="btn hero__btn hero__btn-primary">
                             <span>войти<span>
-                        </a> 
+                        </a>
                         <!-- /.btn hero__btn hero__btn-primary -->
                     </div>
                     <!-- /.hero__content-offer -->
@@ -137,7 +139,7 @@
                     <div class="social__icon">
                         <a href="https://www.youtube.com/channel/UC9nAqSXFXJSJi5qe1xBTNTA" class="footer__social-link">
                             <img src="img/youtube.svg" alt="Youtube">
-                        </a>    
+                        </a>
                         <!-- /.footer__social-link -->
                         <a href="https://www.facebook.com/birgeoku/" class="footer__social-link">
                             <img src="img/facebook.svg" alt="Facebook">
@@ -153,11 +155,11 @@
                 <div class="footer__language">
                     <a href="/index.html" class="footer__language-item kaz">
                         каз
-                    </a> 
+                    </a>
                     <!-- /.footer__language-item kaz -->
                     <a href="#" class="footer__language-item lang__active ru">
                         рус
-                    </a> 
+                    </a>
                     <!-- /.footer__language-item ru -->
                 </div>
                 <!-- /.footer__language -->
@@ -166,7 +168,42 @@
         </div>
     </footer>
     <!-- /#footer.footer -->
-    
+
+    <!-- Модальное окно -->
+    <div class="popup">
+        <div class="popup-content">
+            <button class="popup-close">
+                &times;
+            </button>
+            <!-- /.popup-close -->
+            <h3 class="popup__title">
+                Контакты
+            </h3>
+            <!-- /.popup__title -->
+            <div class="popup__content-link">
+                <div class="popup__content-link-tel">
+                    <img src="img/phone-call.svg" alt="Телефон">
+                    <a href="tel:+77074568776" class="popup__link-tel">
+                        +7 (707) 456-87-76
+                    </a>
+                    <!-- /.popup__link-tel -->
+                </div>
+                <!-- /.popup__content-link-tel -->
+                <div class="popup__content-link-email">
+                    <img src="img/email.svg" alt="E-mail">
+                    <a href="#" class="popup__link-email">
+                        academy-elbasy@mail.ru
+                    </a>
+                    <!-- /.popup__link-email -->
+                </div>
+                <!-- /.popup__content-link-tel -->
+            </div>
+            <!-- /.popup__content-link -->
+        </div>
+        <!-- /.popup-content -->
+    </div>
+    <!-- /.popup -->
+
 
 
     <!-- Подключаем wow js -->
@@ -175,4 +212,5 @@
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

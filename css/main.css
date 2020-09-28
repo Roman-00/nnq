@@ -98,6 +98,94 @@ h1, h2, h3, h4, h5, h6, p, span {
     margin-right: 0px;
 }
 
+/* Стили для Popup */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.popup .popup-content {
+    position: fixed;
+    width: 40rem;
+    left: 38%;
+    top: 10%;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    padding: 2rem 6rem;
+    background-color: #ffffff
+}
+
+.popup .popup-close {
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    right: 1rem;
+    width: 2rem;
+    text-align: center;
+    border: none;
+    font-size: 3rem;
+    color: #20206B;
+    background: none;
+    outline: none;
+}
+
+.popup__title {
+    margin-bottom: 30px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #20206B;
+    text-align: center;
+}
+
+.popup__content-link-tel,
+.popup__content-link-email {
+    display: flex;
+    align-items: center;
+}
+
+.popup__content-link-tel {
+    margin-bottom: 20px;
+}
+
+.popup__content-link-tel img {
+    margin-right: 20px;
+}
+
+.popup__content-link-email img {
+    margin-right: 20px;
+}
+
+.popup__content-link-tel a {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #20206B;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.popup__content-link-email a {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #20206B;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.popup__content-link-tel a:hover,
+.popup__content-link-email a:hover {
+    color: #CE0056;
+}
+
 /*.nav__item::after {
     display: block;
 	position: absolute;
