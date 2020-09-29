@@ -202,6 +202,11 @@ h1, h2, h3, h4, h5, h6, p, span {
     color: #CE0056;
 }
 
+.mobile__download-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /*.nav__item::after {
     display: block;
 	position: absolute;
