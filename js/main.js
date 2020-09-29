@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
     // Функция анимации на главном экране 
-    const animImg = () => {
+    /*const animImg = () => {
         //Получаем элемент фона с деревом
         const bgTree = document.getElementById("background-tree");
         
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bgTree.setAttribute("style", "background-position: " + offsetX + "px " + offsetY + "px;");};
     }
 
-    animImg();
+    animImg();*/
 
     // Функция вызова модального окна с анимацией
 

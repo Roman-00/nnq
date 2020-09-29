@@ -146,13 +146,19 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .popup__content-link-tel,
+.popup__content-link-website,
 .popup__content-link-email {
     display: flex;
     align-items: center;
 }
 
-.popup__content-link-tel {
+.popup__content-link-website,
+.popup__content-link-email {
     margin-bottom: 20px;
+}
+
+.popup__content-link-website img {
+    margin-right: 20px;
 }
 
 .popup__content-link-tel img {
@@ -161,6 +167,15 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .popup__content-link-email img {
     margin-right: 20px;
+}
+
+.popup__content-link-website a {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #20206B;
+    text-decoration: none;
+    transition: 0.5s ease;
 }
 
 .popup__content-link-tel a {
@@ -182,6 +197,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .popup__content-link-tel a:hover,
+.popup__content-link-website a:hover,
 .popup__content-link-email a:hover {
     color: #CE0056;
 }
@@ -595,6 +611,27 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 /* ---------- Toogle Menu ---------- */
+
+/* ---------- About -kz ---------- */
+
+.hero__about-kz {
+    padding-top: 20px;
+}
+
+.hero__container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.text-about {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+}
+
+
+/* ---------- About -kz ---------- */
 
 /* ---------- Медиа запросы для адаптива ---------- */
 
