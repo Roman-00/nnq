@@ -93,6 +93,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     togglePopUp();
 
+    // Реализация открытия Popup
+
+    const togglePopUpAta = () => {
+      const popupAta = document.querySelector('.popup-ata'),
+        popupContentAta = document.querySelector('.popup-content-ata'),
+        popupBtnAta = document.querySelectorAll('.popup-btn-ata'),
+        popupWidthAta = document.documentElement.clientWidth;
+    
+      const animatePopup = () => animate({
+        duration: 300,
+        timing(timeFraction) {
+          return timeFraction;
+        },
+        draw(progress) {
+          popupContentAta.style.top = '0%';
+          popupAta.style.opacity = 0.1;
+          popupAta.style.display = 'block';
+          popupContentAta.style.top = progress * 25 + '%';
+          popupAta.style.opacity = progress * 1;
+        }
+      });
+    
+      popupBtnAta.forEach(item => {
+        if (popupWidthAta > 768) {
+          item.addEventListener('click', animatePopup);
+        } else {
+          item.addEventListener('click', () => popupAta.style.display = 'block');
+        }
+      });
+    
+      popupAta.addEventListener('click', event => {
+        let target = event.target;
+        if (target.classList.contains('popup-close-ata')) {
+          popupAta.style.display = 'none';
+        } else {
+          target = target.closest('.popup-content-ata');
+          if (!target) {
+            popupAta.style.display = 'none';
+          }
+        }
+      });
+    };
+
+    togglePopUpAta();
+
 });
 
 $(document).ready(function() {

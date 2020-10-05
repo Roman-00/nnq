@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Елбасы Академиясының қашықтан оқыту мектебі</title>
+    <title>Елбасы Академиясының онлайн мектебі</title>
     <!--  Подключение файла гланого файла анимации  -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Подключение файла с анимацией -->
@@ -18,12 +18,12 @@
 <body id="swup" class="transition-fade">
 
     <!---------- Preloader ---------->
-    <div class="preloader">
+    <!-- div class="preloader">
         <div class="preloader__row">
           <div class="preloader__item"></div>
           <div class="preloader__item"></div>
         </div>
-      </div>
+      </div -->
     <!---------- Preloader ---------->
 
     <header class="header" id="header">
@@ -41,17 +41,17 @@
                 </div>
                 <!-- /.header__content-logo -->
                 <nav class="nav menu__nav wow fadeInDown" data-wow-delay="0.5s">
-                    <a href="files/school-pdf.pdf" download class="nav__item">
+                    <a href="files/birgeoqy_kz.pdf" download class="nav__item">
                         <!-- жоба туралы -->
                         <img src="img/button/01.png" alt="жоба туралы" class="nav__item-img">
                     </a>
                     <!-- /.nav__item -->
-                    <a href="files/school-pdf.pdf" download class="nav__item">
+                    <a href="#" class="nav__item popup-btn-ata">
                         <!-- ата-анаға -->
                         <img src="img/button/03.png" alt="ата-анаға" class="nav__item-img">
                     </a>
                     <!-- /.nav__item -->
-                    <a href="files/school-pdf.pdf" download class="nav__item">
+                    <a href="files/okushy.jpg" download class="nav__item">
                         <!-- оқушыға -->
                         <img src="img/button/02.png" alt="оқушыға" class="nav__item-img">
                     </a>
@@ -74,9 +74,9 @@
                 <!-- /.menu-toggle -->
                 <nav class="mob-menu">
                     <ul class="menu">
-                      <li data-text="Home"><a href="files/school-pdf.pdf" class="mobile__download-link" download>жоба туралы</a></li>
-                      <li data-text="Projects"><a href="files/school-pdf.pdf" class="mobile__download-link" download>ата-анаға</a></li>
-                      <li data-text="About"><a href="files/school-pdf.pdf" class="mobile__download-link" download>оқушыға</a></li>
+                      <li data-text="жоба туралы"><a href="birgeoqy_kz.pdf" class="mobile__download-link" download>жоба туралы</a></li>
+                      <li data-text="ата-анаға"><a href="files/kelisim_kz.pdf" class="mobile__download-link" download>ата-анаға</a></li>
+                      <li data-text="оқушыға"><a href="files/okushy.jpg" class="mobile__download-link" download>оқушыға</a></li>
                       <li class="popup-btn">байланыс</li>
                     </ul>
                 </nav>
@@ -103,7 +103,7 @@
                             онлайн мектебі
                         </span> 
                         <!-- /.hero__title-desc -->
-                        <a href="https://bilimland.kz/kk/login" class="btn hero__btn hero__btn-primary">
+                        <a href="https://onlinemektep.org/login" class="btn hero__btn hero__btn-primary">
                             кіру
                         </a> 
                         <!-- /.btn hero__btn hero__btn-primary -->
@@ -135,15 +135,15 @@
             <div class="footer__content">
                 <div class="footer__social">
                     <div class="social__icon">
-                        <a href="https://www.youtube.com/channel/UC9nAqSXFXJSJi5qe1xBTNTA" class="footer__social-link">
+                        <a href="https://www.youtube.com/channel/UC9nAqSXFXJSJi5qe1xBTNTA" target="_blank" class="footer__social-link">
                             <img src="img/youtube.svg" alt="Youtube">
                         </a>    
                         <!-- /.footer__social-link -->
-                        <a href="https://www.facebook.com/birgeoku/" class="footer__social-link">
+                        <a href="https://www.facebook.com/birgeoku/" target="_blank" class="footer__social-link">
                             <img src="img/facebook.svg" alt="Facebook">
                         </a>
                         <!-- /.footer__social-link -->
-                        <a href="https://www.instagram.com/birgeoku" class="footer__social-link">
+                        <a href="https://www.instagram.com/birgeoku" target="_blank" class="footer__social-link">
                             <img src="img/instagram.svg" alt="Instagram">
                         </a>
                         <!-- /.footer__social-link -->
@@ -152,12 +152,10 @@
                 </div>
                 <div class="footer__language">
                     <a href="#" class="footer__language-item lang__active kaz">
-                        каз
-                    </a> 
+                        ҚАЗ</a> 
                     <!-- /.footer__language-item kaz -->
                     <a href="/index-ru.html" class="footer__language-item ru">
-                        рус
-                    </a> 
+                        RU</a> 
                     <!-- /.footer__language-item ru -->
                 </div>
                 <!-- /.footer__language -->
@@ -209,7 +207,41 @@
         <!-- /.popup-content -->
     </div>
     <!-- /.popup -->
-    
+
+    <!-- Модальное окно Для вкладки родители -->
+    <div class="popup-ata">
+        <div class="popup-content-ata">
+            <button class="popup-close-ata">
+                &times;
+            </button> 
+            <!-- /.popup-close -->
+            <h3 class="popup__title">
+                Ата-аналарға және заңды өкілдерге арналған ақпарат
+            </h3>
+            <!-- /.popup__title -->
+            <div class="popup__content-link">
+                <div class="popup__content-link-website">
+                    <img src="img/icon-pdf.svg" alt="Пайдаланушы келісімі">
+                    <a href="files/kelisim_kz.pdf" download class="popup__link-web">
+                        Пайдаланушы келісімі
+                    </a> 
+                    <!-- /.popup__link-web -->
+                </div>
+                <!-- /.popup__content-link-website -->
+                <div class="popup__content-link-email">
+                    <img src="img/pam-pdf.svg" alt="E-mail">
+                    <a href="files/ata_ana.jpg" class="popup__link-email">
+                       Жадынама
+                    </a> 
+                    <!-- /.popup__link-email -->
+                </div>
+                <!-- /.popup__content-link-email -->
+            </div>
+            <!-- /.popup__content-link -->
+        </div>
+        <!-- /.popup-content -->
+    </div>
+    <!-- /.popup -->    
 
 
     <!-- Подключение скриптов -->
